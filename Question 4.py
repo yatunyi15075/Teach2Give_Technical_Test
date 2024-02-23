@@ -8,8 +8,10 @@ Examples:
 """
 
 def capitalize_the_words(sentence):
-    return sentence.title()
+    return ' '.join(word.capitalize() for word in sentence.split())
 
-print(capitalize_the_words("hi"))
-print(capitalize_the_words("i love programming")) 
-
+try:
+    the_input_sentence = input("Enter a sentence: ")
+    print(capitalize_the_words(the_input_sentence))
+except Exception as e:
+    print("An error has occurred:", e)
