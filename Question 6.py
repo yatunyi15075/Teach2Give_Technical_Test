@@ -4,15 +4,14 @@ Write a program that counts the number of vowels in a sentence.
 eg " Hello World " => returns 2
 """
 
-def count_vowels(sentence):
+def count_the_vowels(sentence):
+    count = 0
     vowels = "aeiouAEIOU"
-    vowel_count = 0
+    
+    for letter in sentence:
+        if letter in vowels:
+            count += 1
+            
+    return count
 
-    for char in sentence:
-        if char in vowels:
-            vowel_count += 1
-
-    return vowel_count
-
-# Test case
-print(count_vowels("Hello World"))  # Output: 3
+print(count_the_vowels("Hello World")) 
