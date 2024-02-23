@@ -8,6 +8,7 @@ for the attachment with Teach2Give.
 The technical test consists of 6 questions. Each question is designed to test different aspects of programming knowledge and problem-solving skills.
 
 Q1. **FizzBuzz**: Write a Python program to print numbers from 1 to 100. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz";
+
 Q2. and for numbers that are multiples of both 3 and 5, print "FizzBuzz".
 
 Q3. **Fibonacci Sequence**: Write a Python program to generate the Fibonacci sequence up to 100.
