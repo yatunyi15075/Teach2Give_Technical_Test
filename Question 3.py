@@ -9,11 +9,13 @@ Examples:
 def check_power_of_two(n):
     if n <= 0: 
         return False
-    elif n & (n - 1) == 0: 
-        return True
-    else:
-        return False
+    return n & (n - 1) == 0
 
-print(check_power_of_two(8)) 
-print(check_power_of_two(6))
+try:
+    number = int(input("Enter an integer: "))
+    print(check_power_of_two(number))
+except ValueError:
+    print("Invalid input! Please enter an integer.")
+
+
 
