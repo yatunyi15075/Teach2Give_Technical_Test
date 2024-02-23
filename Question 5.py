@@ -10,20 +10,20 @@ For input 91, the program should return 19.
 
 """
 
-def reverse_integer(n):
+def reverse_int(n):
     if n == 0:
         return 0
 
     sign = -1 if n < 0 else 1
     num_str = str(abs(n))
 
-    reversed_str = num_str[::-1]
-    reversed_num = int(reversed_str) * sign
+    the_reversed_str = num_str[::-1]
+    the_reversed_num = int(reversed_str) * sign
 
-    return reversed_num
+    return the_reversed_num
 
-print(reverse_integer(500)) 
-print(reverse_integer(-56)) 
-print(reverse_integer(-90)) 
-print(reverse_integer(91))   
+print(reverse_int(500)) 
+print(reverse_int(-56)) 
+print(reverse_int(-90)) 
+print(reverse_int(91))   
 
