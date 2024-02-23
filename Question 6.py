@@ -14,4 +14,8 @@ def count_the_vowels(sentence):
             
     return count
 
-print(count_the_vowels("Hello World")) 
+try:
+    the_input_sentence = input("Enter a sentence: ")
+    print(count_the_vowels(the_input_sentence))
+except Exception as e:
+    print("An error occurred:", e)
