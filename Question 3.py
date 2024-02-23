@@ -7,14 +7,13 @@ Examples:
 """
 
 def is_power_of_two(num):
-    if num <= 0:  # Zero and negative numbers are not powers of two
+    if num <= 0: 
         return False
-    elif num & (num - 1) == 0:  # Using bitwise AND operation to check if it's a power of two
+    elif num & (num - 1) == 0: 
         return True
     else:
         return False
 
-# Test cases
-print(is_power_of_two(8))  # Output: True
-print(is_power_of_two(6))  # Output: False
+print(is_power_of_two(8)) 
+print(is_power_of_two(6))
 
