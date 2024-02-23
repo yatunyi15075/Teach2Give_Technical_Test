@@ -7,10 +7,9 @@ Examples:
 "i love programming"=> returns "I Love Programming"
 """
 
-def capitalize_words(sentence):
+def capitalize_the_words(sentence):
     return sentence.title()
 
-# Test cases
-print(capitalize_words("hi"))  # Output: "Hi"
-print(capitalize_words("i love programming")) 
+print(capitalize_the_words("hi"))
+print(capitalize_the_words("i love programming")) 
 
