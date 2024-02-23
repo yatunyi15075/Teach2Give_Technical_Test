@@ -10,23 +10,20 @@ For input 91, the program should return 19.
 
 """
 
-def reverse_integer(num):
-    if num == 0:
+def reverse_integer(n):
+    if n == 0:
         return 0
 
-    # Convert integer to string and handle sign separately
-    sign = -1 if num < 0 else 1
-    num_str = str(abs(num))
+    sign = -1 if n < 0 else 1
+    num_str = str(abs(n))
 
-    # Reverse the string and convert it back to integer
     reversed_str = num_str[::-1]
     reversed_num = int(reversed_str) * sign
 
     return reversed_num
 
-# Test cases
-print(reverse_integer(500))   # Output: 5
-print(reverse_integer(-56))   # Output: -65
-print(reverse_integer(-90))   # Output: -9
-print(reverse_integer(91))    # Output: 19
+print(reverse_integer(500)) 
+print(reverse_integer(-56)) 
+print(reverse_integer(-90)) 
+print(reverse_integer(91))   
 
