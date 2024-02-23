@@ -17,13 +17,15 @@ def reverse_int(n):
     sign = -1 if n < 0 else 1
     num_str = str(abs(n))
 
-    the_reversed_str = num_str[::-1]
-    the_reversed_num = int(reversed_str) * sign
+    reversed_str = num_str[::-1]
+    reversed_num = int(reversed_str) * sign
 
-    return the_reversed_num
+    return reversed_num
 
-print(reverse_int(500)) 
-print(reverse_int(-56)) 
-print(reverse_int(-90)) 
-print(reverse_int(91))   
+try:
+    number = int(input("Enter an integer: "))
+    print(reverse_int(number))
+except ValueError:
+    print("Invalid input! Enter a real integer.")
+
 
