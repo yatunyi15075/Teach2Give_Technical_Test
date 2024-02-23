@@ -3,17 +3,16 @@ Question 2: Fibonacci Sequence
 Write a program to generate the Fibonacci sequence up to 100.
 """
 
-def generate_fibonacci(limit):
-    fib_sequence = [0, 1]  # Initial sequence: 0 and 1
+def generate_fib_sequence(limit):
+    sequence = [0, 1]
 
-    while fib_sequence[-1] + fib_sequence[-2] <= limit:
-        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    while sequence[-1] + sequence[-2] <= limit:
+        sequence.append(sequence[-1] + sequence[-2])
 
-    return fib_sequence
+    return sequence
 
-# Generate Fibonacci sequence up to 100
-fibonacci_sequence = generate_fibonacci(100)
+generated_fib_sequence = generate_fib_sequence(100)
 
-# Print the Fibonacci sequence
-print("Fibonacci sequence up to 100:")
-print(fibonacci_sequence)
+print("Allthe fibonacci sequence up to 100: ")
+print(generated_fib_sequence)
+
