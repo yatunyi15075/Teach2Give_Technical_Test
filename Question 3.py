@@ -6,14 +6,14 @@ Examples:
 6=> returns false
 """
 
-def is_power_of_two(num):
-    if num <= 0: 
+def check_power_of_two(n):
+    if n <= 0: 
         return False
-    elif num & (num - 1) == 0: 
+    elif n & (n - 1) == 0: 
         return True
     else:
         return False
 
-print(is_power_of_two(8)) 
-print(is_power_of_two(6))
+print(check_power_of_two(8)) 
+print(check_power_of_two(6))
 
